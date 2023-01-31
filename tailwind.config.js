@@ -5,4 +5,14 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+    daisyui: {
+        styled: false,
+        themes: false,
+        base: true,
+        utils: true,
+        logs: true,
+        rtl: false,
+        prefix: "",
+        // darkTheme: "dark",
+      },
   }
