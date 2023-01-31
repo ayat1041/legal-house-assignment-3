@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.49.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
     <!-- tailwind -->
@@ -19,13 +22,59 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                button: '#B68C5A',
               }
             }
           }
         }
       </script>
 </head>
-<body>
-    
+<body style="font-family: 'Poppins', sans-serif;">
+    <!-- header -->
+    <header class="w-[1140px] mx-auto">
+        <nav class="flex items-center justify-between  pt-14 mb-12">
+            <img src="/images/logo2.png" alt="logo-1">
+            <ul class="flex text-[#707070]">
+                <li class="pl-12 cursor-pointer">Home</li>
+                <li class="pl-12 cursor-pointer">Services<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Cases<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Blogs<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Contact Us<i class="fa-solid fa-chevron-right pl-1"></i></li>
+            </ul>
+            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="bg-button px-4 py-7 rounded-md text-white text-lg font-medium" >Free Consultation</button>
+            <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                <div class="relative w-full h-full max-w-2xl md:h-auto">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between p-4 border-b rounded-t ">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                Free Consultation
+                            </h3>
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="defaultModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500">
+                                For free consultation buy our membership!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <div class="bg-contain h-screen bg-no-repeat mx-auto" 
+    style="background-image: url('/images/banner.png');">
+        <h1 class="text-6xl text-white font-bold text-center pt-32">We Provide Effective<br>Legal Solutions</h1>
+        <h1 class="text-xs text-white text-center mt-10">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration in some form, by injected humour.</h1>
+    </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>
 </html>
