@@ -34,80 +34,103 @@
 <body style="font-family: 'Poppins', sans-serif;">
     <!-- header -->
     <header class="w-[90vw] lg:w-[1170px] mx-auto">
-        
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <img class ="w-[100px] lg:w-[158px]" src="/images/logo2.png" alt="logo-1">
-        <div class="flex items-center md:order-2">
-            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                class="bg-button px-2 py-2 lg:px-4 lg:py-4 rounded-md text-white text-sm lg:text-lg font-medium">Free Consultation</button>
-            <div id="defaultModal" tabindex="-1" aria-hidden="true"
-                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-                <div class="relative w-full h-full max-w-2xl md:h-auto">
-                    <div class="relative bg-white rounded-lg shadow">
-                        <div class="flex items-start justify-between p-4 border-b rounded-t ">
-                            <h3 class="text-xl font-semibold text-gray-900">
-                                Free Consultation
-                            </h3>
-                            <button type="button"
-                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
-                                data-modal-hide="defaultModal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <div class="p-6 space-y-6">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                For free consultation buy our membership!
-                            </p>
+
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <img class="w-[100px] lg:w-[158px]" src="/images/logo2.png" alt="logo-1">
+                <div class="flex items-center md:order-2">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                        class="bg-button px-2 py-2 lg:px-4 lg:py-4 rounded-md text-white text-sm lg:text-lg font-medium">Free
+                        Consultation</button>
+                    <div id="defaultModal" tabindex="-1" aria-hidden="true"
+                        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                        <div class="relative w-full h-full max-w-2xl md:h-auto">
+                            <div class="relative bg-white rounded-lg shadow">
+                                <div class="flex items-start justify-between p-4 border-b rounded-t ">
+                                    <h3 class="text-xl font-semibold text-gray-900">
+                                        Free Consultation
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                                        data-modal-hide="defaultModal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div class="p-6 space-y-6">
+                                    <p class="text-base leading-relaxed text-gray-500">
+                                        For free consultation buy our membership!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Dropdown -->
+                    <button data-collapse-toggle="mobile-menu-language-select" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="mobile-menu-language-select" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                    id="mobile-menu-language-select">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-button rounded md:bg-transparent md:text-blue-700 md:p-0"
+                                aria-current="page">Home<i
+                                    class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services<i
+                                    class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Cases<i
+                                    class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Blog<i
+                                    class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact
+                                Us<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- Dropdown -->
-            <button data-collapse-toggle="mobile-menu-language-select" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-language-select" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-language-select">
-        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-            <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-button rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Cases<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Blog<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact Us<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
-            </li>
-        </ul>
-        </div>
-        </div>
-    </nav>
+        </nav>
 
 
         <!-- banner -->
         <div class="bg-cover w-[90vw] lg:w-[1170px] h-full rounded-lg bg-no-repeat mx-auto pb-40 mb-28 lg:block"
             style="background-image: url('/images/banner.png');">
             <!-- <div class="bg-orange-400"> -->
-            <h1 class="text-3xl lg:text-6xl text-white font-bold text-center pt-32">We Provide Effective<br>Legal Solutions</h1>
-            <h1 class="text-[10px] lg:text-xs text-white text-center mt-10">There are many variations of passages of Lorem Ipsum
+            <h1 class="text-3xl lg:text-6xl text-white font-bold text-center pt-32">We Provide Effective<br>Legal
+                Solutions</h1>
+            <h1 class="text-[10px] lg:text-xs text-white text-center mt-10">There are many variations of passages of
+                Lorem Ipsum
                 available, but the majority<br>have suffered alteration in some form, by injected humour.</h1>
             <div class="flex justify-center items-center flex-col w-[90vw] lg:w-max lg:block mx-auto mt-8">
-                <input class="border-none lg:w-[500px] ps-5 py-5 mr-0 lg:mr-4 mb-4 lg:mb-0 rounded-md text-sm" type="text"
-                    placeholder="Search your services" />
+                <input class="border-none lg:w-[500px] ps-5 py-5 mr-0 lg:mr-4 mb-4 lg:mb-0 rounded-md text-sm"
+                    type="text" placeholder="Search your services" />
                 <button class="bg-button py-4 px-10 rounded-md text-white text-lg font-medium">Search</button>
             </div>
         </div>
@@ -117,7 +140,8 @@
     <!-- section-1 -->
     <div class="w-[90vw] lg:container mx-auto text-center">
         <h1 class="text-4xl text-[#414040] mb-6">The Legal Practice Area</h1>
-        <p class="text-[#707070] mb-24">There are many variations<br>of passages of Lorem Ipsum available,<br>but the majority
+        <p class="text-[#707070] mb-24">There are many variations<br>of passages of Lorem Ipsum available,<br>but the
+            majority
             have suffered alteration<br>in some form, by injected humour.</p>
     </div>
 
@@ -130,7 +154,8 @@
                 have<br>suffered alteration in some<br>form, by injected humour.</p>
             <img src="/images/Frame.png" alt="">
         </div>
-        <div class="flex items-center flex-col p-2 py-10 bg-gradient-to-b from-[#00000010] to-white  h-[500px] lg:border-b lg:border-r">
+        <div
+            class="flex items-center flex-col p-2 py-10 bg-gradient-to-b from-[#00000010] to-white  h-[500px] lg:border-b lg:border-r">
             <img class="w-16 pb-8" src="/images/criminal.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Criminal Law</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
@@ -191,7 +216,8 @@
                     <img class="w-16 lg:w-28 rounded-full mb-2 lg:mb-6" src="/images/avatar.jpg" alt="">
                     <h2 class="text-base lg:text-2xl text-white font-semibold text-center mb-1">Awlad Hossain</h2>
                     <h2 class="text-xs lg:text-base text-white font-medium text-center mb:4 lg:mb-8">UIX Designer</h2>
-                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply
+                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum
+                        is not simply
                         random text. It has roots in a piece of classical Latin<br>literature from 45 BC, making it over
                         2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney<br>College in Virginia,
                         looked up one of the more obscure Latin words, consectetur.</h2>
@@ -205,7 +231,8 @@
                     <img class="w-16 lg:w-28 rounded-full mb-2 lg:mb-6" src="/images/avatar.jpg" alt="">
                     <h2 class="text-base lg:text-2xl text-white font-semibold text-center mb-1">Awlad Hossain</h2>
                     <h2 class="text-xs lg:text-base text-white font-medium text-center mb:4 lg:mb-8">UIX Designer</h2>
-                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply
+                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum
+                        is not simply
                         random text. It has roots in a piece of classical Latin<br>literature from 45 BC, making it over
                         2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney<br>College in Virginia,
                         looked up one of the more obscure Latin words, consectetur.</h2>
@@ -219,7 +246,8 @@
                     <img class="w-16 lg:w-28 rounded-full mb-2 lg:mb-6" src="/images/avatar.jpg" alt="">
                     <h2 class="text-base lg:text-2xl text-white font-semibold text-center mb-1">Awlad Hossain</h2>
                     <h2 class="text-xs lg:text-base text-white font-medium text-center mb:4 lg:mb-8">UIX Designer</h2>
-                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply
+                    <h2 class="text-[8px] lg:text-base text-white text-center">Contrary to popular belief, Lorem Ipsum
+                        is not simply
                         random text. It has roots in a piece of classical Latin<br>literature from 45 BC, making it over
                         2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney<br>College in Virginia,
                         looked up one of the more obscure Latin words, consectetur.</h2>
@@ -345,41 +373,53 @@
 
     <div class="lg:w-[1170px] flex flex-col lg:flex-row mx-auto lg:gap-6">
         <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="w-[90vw] mx-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-r lg:border-b">
+            <div
+                class="w-[90vw] mx-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-r lg:border-b">
                 <img class="mb-4" src="/images/location.png" alt="">
                 <h1 class="font-extrabold text-2xl text-[#414040] mb-4">Address</h1>
                 <h1 class="text-base text-[#707070] text-center">A108 Adam Street,<br>
                     New York, NY 535022</h1>
             </div>
-            <div class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-b">
+            <div
+                class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-b">
                 <img class="mb-4" src="/images/location.png" alt="">
                 <h1 class="font-extrabold text-2xl text-[#414040] mb-4">Call Us</h1>
                 <h1 class="text-base text-[#707070] text-center">+88 01750 00 00 00<br>+88 01750 00 00 00</h1>
             </div>
-            <div class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-r">
+            <div
+                class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3] lg:border-r">
                 <img class="mb-4" src="/images/location.png" alt="">
                 <h1 class="font-extrabold text-2xl text-[#414040] mb-4">Email Us</h1>
                 <h1 class="text-base text-[#707070] text-center">info@gmail.com<br>info@gmail.com</h1>
             </div>
-            <div class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3]">
+            <div
+                class="w-[80vw] max-auto lg:mx-0 lg:w-auto flex flex-col items-center justify-center px-14 py-8 bg-[#f3f3f3]">
                 <img class="mb-4" src="/images/location.png" alt="">
                 <h1 class="font-extrabold text-2xl text-[#414040] mb-4">Working Hours</h1>
                 <h1 class="text-base text-[#707070] text-center">Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</h1>
             </div>
         </div>
         <form class="flex flex-col justify-center items-center grow lg:mx-8">
-            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text" placeholder="Your Name">
-            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text" placeholder="Your Email">
-            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text" placeholder="Subject">
-            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text" placeholder="Your Message">
-            <input class="w-[90%] my-6 bg-button text-xl font-bold text-white px-6 py-6 border-none rounded-lg" type="submit">
+            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text"
+                placeholder="Your Name">
+            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text"
+                placeholder="Your Email">
+            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text"
+                placeholder="Subject">
+            <input class="w-[90%] my-6 bg-slate-200 px-6 py-6 text-base border-none rounded-lg" type="text"
+                placeholder="Your Message">
+            <input class="w-[90%] my-6 bg-button text-xl font-bold text-white px-6 py-6 border-none rounded-lg"
+                type="submit">
         </form>
     </div>
 
-    <footer class="w-[90vw] max-w-full lg:w-full pt-32 pb-24 flex flex-col lg:flex-row justify-around items-center mx-auto bg-black mt-20">
+    <footer
+        class="w-[90vw] max-w-full lg:w-full pt-32 pb-24 flex flex-col lg:flex-row justify-around items-center mx-auto bg-black mt-20">
         <div class="flex flex-col items-center justify-center">
             <img class="w-40 mb-8" src="/images/logo.png" alt="">
-            <h1 class="text-white text-base text-center lg:text-start">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority have<br>suffered alteration in some<br>form, by injected humour.</h1>
+            <h1 class="text-white text-base text-center lg:text-start">There are many variations of<br>passages of Lorem
+                Ipsum<br>available, but the majority have<br>suffered alteration in some<br>form, by injected humour.
+            </h1>
         </div>
         <div class="pb-10 lg:pb-0"></div>
         <div class="flex flex-col items-center">
@@ -400,9 +440,13 @@
         <div class="pb-10 lg:pb-0"></div>
         <div class="flex flex-col items-center">
             <h1 class="mb-12 text-2xl text-white font-extrabold">Subscribe</h1>
-            <p class="text-white text-xs font-extralight mb-5">Subscribe for our latest &<br>Articles. We Won’t Give You<br>Spam Mails</p>
-            <div class="w-max relative rounded-lg"><input class="w-[100%] bg-slate-200 text-slate-400 px-4 py-4 text-xs border-none rounded-lg" type="text" placeholder="Email Address"/>
-            <span class="justify-center items-center w-12 h-full z-10 bg-button absolute right-0 rounded-lg"><img class="mx-auto mt-[11px]" src="/images/paper-send.png"/></span>
+            <p class="text-white text-xs font-extralight mb-5">Subscribe for our latest &<br>Articles. We Won’t Give
+                You<br>Spam Mails</p>
+            <div class="w-max relative rounded-lg"><input
+                    class="w-[100%] bg-slate-200 text-slate-400 px-4 py-4 text-xs border-none rounded-lg" type="text"
+                    placeholder="Email Address" />
+                <span class="justify-center items-center w-12 h-full z-10 bg-button absolute right-0 rounded-lg"><img
+                        class="mx-auto mt-[11px]" src="/images/paper-send.png" /></span>
             </div>
         </div>
         <div class="pb-10 lg:pb-0"></div>
