@@ -33,24 +33,18 @@
 
 <body style="font-family: 'Poppins', sans-serif;">
     <!-- header -->
-    <header class="w-[1170px] mx-auto">
-        <nav class="flex items-center justify-between  pt-14 mb-12">
-            <img src="/images/logo2.png" alt="logo-1">
-            <ul class="flex text-[#707070]">
-                <li class="pl-12 cursor-pointer">Home</li>
-                <li class="pl-12 cursor-pointer">Services<i class="fa-solid fa-chevron-right pl-1"></i></li>
-                <li class="pl-12 cursor-pointer">Cases<i class="fa-solid fa-chevron-right pl-1"></i></li>
-                <li class="pl-12 cursor-pointer">Blogs<i class="fa-solid fa-chevron-right pl-1"></i></li>
-                <li class="pl-12 cursor-pointer">Contact Us<i class="fa-solid fa-chevron-right pl-1"></i></li>
-            </ul>
+    <header class="lg:w-[1170px] mx-auto">
+        
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <img class ="w-[100px] lg:w-[158px]" src="/images/logo2.png" alt="logo-1">
+        <div class="flex items-center md:order-2">
             <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
-                class="bg-button px-4 py-7 rounded-md text-white text-lg font-medium">Free Consultation</button>
+                class="bg-button px-2 py-2 lg:px-4 lg:py-4 rounded-md text-white text-sm lg:text-lg font-medium">Free Consultation</button>
             <div id="defaultModal" tabindex="-1" aria-hidden="true"
                 class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
                 <div class="relative w-full h-full max-w-2xl md:h-auto">
-                    <!-- Modal content -->
                     <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
                         <div class="flex items-start justify-between p-4 border-b rounded-t ">
                             <h3 class="text-xl font-semibold text-gray-900">
                                 Free Consultation
@@ -67,7 +61,6 @@
                                 <span class="sr-only">Close modal</span>
                             </button>
                         </div>
-                        <!-- Modal body -->
                         <div class="p-6 space-y-6">
                             <p class="text-base leading-relaxed text-gray-500">
                                 For free consultation buy our membership!
@@ -76,11 +69,80 @@
                     </div>
                 </div>
             </div>
-        </nav>
+            <!-- Dropdown -->
+            <button data-collapse-toggle="mobile-menu-language-select" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-language-select" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-language-select">
+        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+            <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-button rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Cases<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Blog<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact Us<i class="fa-solid fa-chevron-right pl-1 lg:inline hidden"></i></a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+  
+        <!-- <nav class="flex flex-col lg:flex-row items-center justify-between  pt-14 mb-12">
+            <img src="/images/logo2.png" alt="logo-1">
+            <ul class="flex text-[#707070]">
+                <li class="pl-12 cursor-pointer">Home</li>
+                <li class="pl-12 cursor-pointer">Services<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Cases<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Blogs<i class="fa-solid fa-chevron-right pl-1"></i></li>
+                <li class="pl-12 cursor-pointer">Contact Us<i class="fa-solid fa-chevron-right pl-1"></i></li>
+            </ul>
+
+            
+            <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+                class="bg-button px-4 py-7 rounded-md text-white text-lg font-medium">Free Consultation</button>
+            <div id="defaultModal" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                <div class="relative w-full h-full max-w-2xl md:h-auto">
+                    <div class="relative bg-white rounded-lg shadow">
+                        <div class="flex items-start justify-between p-4 border-b rounded-t ">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                Free Consultation
+                            </h3>
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                                data-modal-hide="defaultModal">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <div class="p-6 space-y-6">
+                            <p class="text-base leading-relaxed text-gray-500">
+                                For free consultation buy our membership!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
 
 
         <!-- banner -->
-        <div class="bg-cover w-full lg:w-[1170px] h-full rounded-lg bg-no-repeat mx-auto pb-40 mb-28"
+        <div class="bg-cover w-full lg:w-[1170px] h-full rounded-lg bg-no-repeat mx-auto pb-40 mb-28 lg:block hidden"
             style="background-image: url('/images/banner.png');">
             <!-- <div class="bg-orange-400"> -->
             <h1 class="text-6xl text-white font-bold text-center pt-32">We Provide Effective<br>Legal Solutions</h1>
@@ -103,36 +165,36 @@
     </div>
 
     <!-- 6-grid section -->
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 divide-x divide-y">
-        <div class="flex items-center flex-col p-2 py-10 h-[500px]">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3">
+        <div class="flex items-center flex-col p-2 py-10 h-[500px] lg:border-r lg:border-b">
             <img class="w-16 pb-8" src="/images/business.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Business Law</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
                 have<br>suffered alteration in some<br>form, by injected humour.</p>
             <img src="/images/Frame.png" alt="">
         </div>
-        <div class="flex items-center flex-col p-2 py-10 bg-gradient-to-b from-[#00000010] to-white  h-[500px]">
+        <div class="flex items-center flex-col p-2 py-10 bg-gradient-to-b from-[#00000010] to-white  h-[500px] lg:border-b lg:border-r">
             <img class="w-16 pb-8" src="/images/criminal.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Criminal Law</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
                 have<br>suffered alteration in some<br>form, by injected humour.</p>
             <img src="/images/Frame.png" alt="">
         </div>
-        <div class="flex items-center flex-col p-2 py-10 h-[500px]">
+        <div class="flex items-center flex-col p-2 py-10 h-[500px] lg:border-b">
             <img class="w-16 pb-8" src="/images/child.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Child Support</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
                 have<br>suffered alteration in some<br>form, by injected humour.</p>
             <img src="/images/Frame.png" alt="">
         </div>
-        <div class="flex items-center flex-col p-2 py-10 h-[500px]">
+        <div class="flex items-center flex-col p-2 py-10 h-[500px] lg:border-r">
             <img class="w-16 pb-8" src="/images/education.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Education Law</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
                 have<br>suffered alteration in some<br>form, by injected humour.</p>
             <img src="/images/Frame.png" alt="">
         </div>
-        <div class="flex items-center flex-col p-2 py-10 h-[500px]">
+        <div class="flex items-center flex-col p-2 py-10 h-[500px] lg:border-r">
             <img class="w-20 pb-8" src="/images/divorce.png" alt="">
             <h1 class="pb-5 text-3xl font-extrabold">Divorce Law</h1>
             <p class="pb-8">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority
@@ -347,7 +409,7 @@
         </form>
     </div>
 
-    <footer class="w-full pt-32 pb-24 flex justify-around items-center mx-auto bg-black mt-20">
+    <footer class="w-full pt-32 pb-24 flex flex-col lg:flex-row justify-around items-center mx-auto bg-black mt-20">
         <div class="flex flex-col justify-center">
             <img class="w-40 mb-8" src="/images/logo.png" alt="">
             <h1 class="text-white text-base">There are many variations of<br>passages of Lorem Ipsum<br>available, but the majority have<br>suffered alteration in some<br>form, by injected humour.</h1>
